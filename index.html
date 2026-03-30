@@ -1,114 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farhan Jewelry</title>
+  <meta charset="UTF-8">
+  <title>Farhan Jewelry</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: #0a0a0a;
-  color: white;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  border-bottom: 1px solid #222;
-}
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: black;
+    }
 
-nav h1 {
-  letter-spacing: 2px;
-}
+    header h1 {
+      color: gold;
+    }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-}
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 120px 20px;
-}
+    .hero h2 {
+      font-size: 40px;
+      color: gold;
+    }
 
-.hero h1 {
-  font-size: 45px;
-}
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
 
-.hero p {
-  color: #bbb;
-}
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
 
-.btn {
-  background: gold;
-  color: black;
-  padding: 12px 25px;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: bold;
-}
+    .card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
 
-/* PRODUCTS */
-.products {
-  padding: 50px 20px;
-  text-align: center;
-}
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-.products h2 {
-  margin-bottom: 30px;
-}
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: black;
+    }
+  </style>
+</head>
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
+<body>
 
-.card {
-  background: #141414;
-  padding: 15px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
+<header>
+  <h1>Farhan Jewelry</h1>
+  <a class="btn" href="https://instagram.com/YOUR_INSTAGRAM">Order Now</a>
+</header>
 
-.card:hover {
-  transform: scale(1.05);
-}
+<section class="hero">
+  <h2>Luxury Jewelry Collection</h2>
+  <p>Premium rings, chains & custom pieces</p>
+  <a class="btn" href="https://instagram.com/YOUR_INSTAGRAM">Shop via Instagram</a>
+</section>
 
-.card img {
-  width: 100%;
-  border-radius: 10px;
-}
+<section class="products">
 
-.card h3 {
-  margin: 10px 0;
-}
+  <div class="card">
+    <img src="https://via.placeholder.com/300" />
+    <h3>Gold Ring</h3>
+    <p>$25</p>
+  </div>
 
-.price {
-  color: gold;
-  font-weight: bold;
-}
+  <div class="card">
+    <img src="https://via.placeholder.com/300" />
+    <h3>Silver Chain</h3>
+    <p>$40</p>
+  </div>
 
-/* ABOUT */
-.about {
-  padding: 60px 20px;
-  text-align: center;
-  max-width: 700px;
-  margin: auto;
-}
+  <div class="card">
+    <img src="https://via.placeholder.com/300" />
+    <h3>Custom Bracelet</h3>
+    <p>$30</p>
+  </div>
 
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  border-top: 1px solid #222;
+</section>
+
+<footer>
+  <p>© 2026 Farhan Jewelry | DM to Order</p>
+</footer>
+
+</body>
+</html>
   color: #aaa;
 }
 </style>
